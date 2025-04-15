@@ -5,9 +5,7 @@
   "homepage": "https://helloarvind.github.io/hindi-flashcards",
   "main": "index.html",
   "scripts": {
-    "start": "serve -s .",
-    "predeploy": "echo 'Building for deployment...'",
-    "deploy": "gh-pages -d ."
+    "start": "serve -s ."
   },
   "dependencies": {
     "chart.js": "^3.9.1",
@@ -16,7 +14,6 @@
   },
   "devDependencies": {
     "@babel/standalone": "^7.18.13",
-    "gh-pages": "^6.3.0",
     "serve": "^14.0.0"
   }
 }
