@@ -143,15 +143,6 @@ const Sidebar = ({ activePage, setActivePage }) => {
       <button 
         style={{
           ...styles.navButton,
-          backgroundColor: activePage === 'stats' ? '#4a6fa5' : '#2c3e50'
-        }} 
-        onClick={() => setActivePage('stats')}
-      >
-        Statistics
-      </button>
-      <button 
-        style={{
-          ...styles.navButton,
           backgroundColor: activePage === 'create' ? '#4a6fa5' : '#2c3e50'
         }} 
         onClick={() => setActivePage('create')}
@@ -229,18 +220,7 @@ const ReviewPage = ({ flashcards, saveFlashcards, updateStats }) => {
 
   return (
     <div style={styles.reviewContainer}>
-      <h1 style={styles.pageTitle}>Flashcard Review</h1>
-      
-      <div style={styles.reviewOptions}>
-        <label style={styles.reviewModeLabel}>
-          <input 
-            type="checkbox" 
-            checked={reviewMode} 
-            onChange={() => setReviewMode(!reviewMode)} 
-          />
-          Track Results
-        </label>
-      </div>
+      <h1 style={styles.pageTitle}>Flashcard Review</h1>      
       
       {flashcards.length > 0 && (
         <div style={styles.reviewContent}>
