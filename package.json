@@ -2,18 +2,22 @@
   "name": "hindi-flashcards",
   "version": "1.0.0",
   "description": "Hindi-English Flashcard Application",
+  "homepage": "https://your-username.github.io/hindi-flashcards",
   "main": "index.html",
   "scripts": {
     "start": "serve -s .",
-    "build": "npx babel app.js --out-file app.js --presets=@babel/preset-react"
+    "build": "npx babel app.js --out-file app.js --presets=@babel/preset-react",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d ."
   },
   "dependencies": {
+    "chart.js": "^3.9.1",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "chart.js": "^3.9.1"
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@babel/standalone": "^7.18.13",
+    "gh-pages": "^6.3.0",
     "serve": "^14.0.0"
   }
 }
