@@ -6,8 +6,7 @@
   "main": "index.html",
   "scripts": {
     "start": "serve -s .",
-    "build": "npx babel app.js --out-file app.js --presets=@babel/preset-react",
-    "predeploy": "npm run build",
+    "predeploy": "echo 'Building for deployment...'",
     "deploy": "gh-pages -d ."
   },
   "dependencies": {
