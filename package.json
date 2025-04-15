@@ -2,7 +2,7 @@
   "name": "hindi-flashcards",
   "version": "1.0.0",
   "description": "Hindi-English Flashcard Application",
-  "homepage": "https://your-username.github.io/hindi-flashcards",
+  "homepage": "https://helloarvind.github.io/hindi-flashcards",
   "main": "index.html",
   "scripts": {
     "start": "serve -s .",
