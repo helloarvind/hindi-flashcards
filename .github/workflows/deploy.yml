@@ -8,6 +8,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v2
       - name: Setup Node.js
@@ -16,6 +18,9 @@ jobs:
           node-version: '16'
       - name: Install Dependencies
         run: npm install
+      # If you have a build step, uncomment the following lines:
+      - name: Build
+        run: npm run build
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
